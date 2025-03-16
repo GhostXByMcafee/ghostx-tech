@@ -1,0 +1,152 @@
+{
+  "header": {
+    "privacySwap": "Privacy Swap",
+    "aiChatbot": "Chat con IA",
+    "about": "Acerca de"
+  },
+  "footer": {
+    "description": "GhostX ofrece herramientas enfocadas en la privacidad inspiradas en la visión de John McAfee sobre la libertad digital",
+    "quickLinks": "Enlaces Rápidos",
+    "about": "Acerca de",
+    "privacy": "Privacidad",
+    "languages": "Idiomas",
+    "tribute": "En memoria de John, con",
+    "by": "por",
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "soon": "Próximamente",
+    "selectLanguage": "Seleccionar idioma"
+  },
+  "mcafee": {
+    "title": "El Legado de John McAfee",
+    "mcafee": {
+      "title": "John McAfee - Pionero de la Libertad Digital"
+    },
+    "hero": {
+      "title": "Libertad A Través de la Privacidad",
+      "subtitle": "Continuando la visión de John McAfee de soberanía digital y libertad personal",
+      "cta": {
+        "privacySwap": "Privacy Swap",
+        "talkToJohn": "Hablar con John"
+      },
+      "common": {
+        "soon": "Próximamente"
+      }
+    },
+    "tools": {
+      "common": {
+        "soon": "Próximamente"
+      },
+      "heading": "Herramientas de Privacidad",
+      "subheading": "Protege tu soberanía digital con estas herramientas inspiradas en la visión de John",
+      "privacySwap": {
+        "title": "Privacy Swap",
+        "description": "Intercambia tus activos cripto de forma privada sin interferencia gubernamental.",
+        "cta": "Probar Privacy Swap"
+      },
+      "chatbot": {
+        "title": "IA de John McAfee",
+        "description": "Conversa con una versión digital de John, construida sobre su filosofía y pensamiento.",
+        "cta": "Hablar con John"
+      }
+    },
+    "events": {
+      "1945": {
+        "title": "Nacimiento de un Revolucionario",
+        "description": "John David McAfee nació en el Reino Unido el 18 de septiembre de 1945, de padre estadounidense y madre británica."
+      },
+      "1987": {
+        "title": "Fundación de McAfee Associates",
+        "description": "John fundó McAfee Associates, una de las primeras empresas en distribuir software antivirus comercialmente."
+      },
+      "2010": {
+        "title": "Comienza la Búsqueda de Libertad",
+        "description": "Después de vender sus intereses en McAfee Associates, John comenzó a enfocarse en la libertad personal y el exceso de control gubernamental."
+      },
+      "2016": {
+        "title": "Candidatura Presidencial",
+        "description": "John se postuló para Presidente de EE.UU. como Libertario, abogando por la adopción de criptomonedas y la conciencia cibernética."
+      },
+      "2019": {
+        "title": "Defensor de las Criptomonedas",
+        "description": "McAfee se convirtió en una voz prominente en el mundo de las criptomonedas, prediciendo un enorme crecimiento del Bitcoin y promoviendo monedas privadas."
+      },
+      "2021": {
+        "title": "Su Legado Continúa",
+        "description": "El viaje físico de John terminó, pero sus ideas sobre libertad, privacidad y escepticismo gubernamental continúan inspirando a millones en todo el mundo."
+      }
+    },
+    "quotes": {
+      "heading": "Citas Memorables",
+      "title": "En Sus Propias Palabras",
+      "subtitle": "Perspectivas de John McAfee sobre la privacidad, la libertad y el futuro digital",
+      "quote1": {
+        "text": "La privacidad no es algo que deberíamos esperar como un favor del gobierno. La privacidad es un derecho inherente.",
+        "year": "2016"
+      },
+      "quote2": {
+        "text": "Las criptomonedas son la clave para liberar a la humanidad del control centralizado del dinero y el poder.",
+        "year": "2018"
+      },
+      "quote3": {
+        "text": "Si perdemos nuestra privacidad, perdemos nuestra humanidad. No hay escapatoria de esta realidad.",
+        "year": "2019"
+      }
+    },
+    "timeline": {
+      "title": "La Cronología de McAfee",
+      "subtitle": "El extraordinario viaje de un pionero tecnológico y defensor de la libertad",
+      "events": {
+        "1945": {
+          "title": "Nacimiento",
+          "description": "John David McAfee nace en el Reino Unido el 18 de septiembre de 1945."
+        },
+        "1987": {
+          "title": "McAfee Associates",
+          "description": "Funda McAfee Associates y lanza el primer antivirus comercial, sentando las bases de una industria multimillonaria."
+        },
+        "2010": {
+          "title": "Cambio al Activismo",
+          "description": "Se enfoca en la privacidad digital y las libertades civiles, advirtiendo sobre la vigilancia gubernamental."
+        },
+        "2016": {
+          "title": "Campaña Presidencial",
+          "description": "Se postula para la nominación presidencial del Partido Libertario, centrándose en la privacidad cibernética y la libertad."
+        },
+        "2019": {
+          "title": "Ghost",
+          "description": "Lanza el proyecto Ghost, una criptomoneda enfocada en la privacidad y un ecosistema descentralizado."
+        },
+        "2021": {
+          "title": "Fallecimiento",
+          "description": "Encontrado muerto en una prisión española a los 75 años, horas después de que se aprobara su extradición a EE.UU."
+        }
+      }
+    },
+    "legacy": {
+      "heading": "Continuando la Misión",
+      "subheading": "John McAfee luchó por la privacidad digital, la libertad frente a la vigilancia gubernamental y la soberanía individual",
+      "principles": {
+        "title": "Principios Fundamentales",
+        "p1": {
+          "title": "La Privacidad como Derecho",
+          "description": "Creemos que la privacidad digital no es un privilegio sino un derecho humano fundamental que debe ser protegido"
+        },
+        "p2": {
+          "title": "Libertad Descentralizada",
+          "description": "El poder debe distribuirse entre los usuarios, no concentrarse en corporaciones o gobiernos"
+        },
+        "p3": {
+          "title": "Seguridad de Código Abierto",
+          "description": "Las herramientas de privacidad deben ser transparentes, permitiendo a los usuarios verificar que funcionan como se promete"
+        }
+      },
+      "join": {
+        "title": "Únete al Movimiento",
+        "description": "Comienza a usar las herramientas de GhostX hoy y recupera el control de tu vida digital. Cada usuario fortalece la red.",
+        "cta": "Comenzar"
+      }
+    }
+  }
+}

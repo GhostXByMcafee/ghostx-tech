@@ -1,0 +1,126 @@
+{
+  "header": {
+    "privacySwap": "Privacy Swap",
+    "aiChatbot": "Chatbot de IA",
+    "about": "Sobre"
+  },
+  "footer": {
+    "description": "A GhostX fornece ferramentas focadas em privacidade inspiradas na visão de John McAfee para a liberdade digital",
+    "quickLinks": "Links Rápidos",
+    "about": "Sobre",
+    "privacy": "Privacidade",
+    "languages": "Idiomas",
+    "tribute": "Em memória de John, com",
+    "by": "por",
+    "rights": "Todos os direitos reservados."
+  },
+  "common": {
+    "soon": "Em breve",
+    "selectLanguage": "Selecionar idioma"
+  },
+  "mcafee": {
+    "title": "O Legado de John McAfee",
+    "mcafee": {
+      "title": "John McAfee - Pioneiro da Liberdade Digital"
+    },
+    "hero": {
+      "title": "Liberdade Através da Privacidade",
+      "subtitle": "Continuando a visão de John McAfee de soberania digital e liberdade pessoal",
+      "cta": {
+        "privacySwap": "Privacy Swap",
+        "talkToJohn": "Falar com John"
+      },
+      "common": {
+        "soon": "Em Breve"
+      }
+    },
+    "tools": {
+      "common": {
+        "soon": "Em Breve"
+      },
+      "heading": "Ferramentas de Privacidade",
+      "subheading": "Proteja sua soberania digital com estas ferramentas inspiradas na visão de John",
+      "privacySwap": {
+        "title": "Privacy Swap",
+        "description": "Troque seus ativos cripto de forma privada sem interferência governamental.",
+        "cta": "Experimentar Privacy Swap"
+      },
+      "chatbot": {
+        "title": "IA de John McAfee",
+        "description": "Converse com uma versão digital de John, construída sobre sua filosofia e pensamento.",
+        "cta": "Falar com John"
+      }
+    },
+    "quotes": {
+      "heading": "Citações Memoráveis",
+      "title": "Em Suas Próprias Palavras",
+      "subtitle": "Perspectivas de John McAfee sobre privacidade, liberdade e o futuro digital",
+      "quote1": {
+        "text": "A privacidade não é algo que devemos esperar como um favor do governo. A privacidade é um direito inerente.",
+        "year": "2016"
+      },
+      "quote2": {
+        "text": "As criptomoedas são a chave para libertar a humanidade do controle centralizado do dinheiro e do poder.",
+        "year": "2018"
+      },
+      "quote3": {
+        "text": "Se perdermos nossa privacidade, perdemos nossa humanidade. Não há escapatória desta realidade.",
+        "year": "2019"
+      }
+    },
+    "timeline": {
+      "title": "A Cronologia de McAfee",
+      "subtitle": "A extraordinária jornada de um pioneiro tecnológico e defensor da liberdade",
+      "events": {
+        "1945": {
+          "title": "Nascimento",
+          "description": "John David McAfee nasce no Reino Unido em 18 de setembro de 1945."
+        },
+        "1987": {
+          "title": "McAfee Associates",
+          "description": "Funda a McAfee Associates e lança o primeiro antivírus comercial, estabelecendo as bases de uma indústria multibilionária."
+        },
+        "2010": {
+          "title": "Mudança para o Ativismo",
+          "description": "Concentra-se na privacidade digital e nas liberdades civis, alertando sobre a vigilância governamental."
+        },
+        "2016": {
+          "title": "Campanha Presidencial",
+          "description": "Candidata-se à nomeação presidencial pelo Partido Libertário, com foco na privacidade cibernética e na liberdade."
+        },
+        "2019": {
+          "title": "Ghost",
+          "description": "Lança o projeto Ghost, uma criptomoeda focada em privacidade e um ecossistema descentralizado."
+        },
+        "2021": {
+          "title": "Falecimento",
+          "description": "Encontrado morto em uma prisão espanhola aos 75 anos, horas depois de sua extradição para os EUA ser aprovada."
+        }
+      }
+    },
+    "legacy": {
+      "heading": "Continuando a Missão",
+      "subheading": "John McAfee lutou pela privacidade digital, liberdade da vigilância governamental e soberania individual",
+      "principles": {
+        "title": "Princípios Fundamentais",
+        "p1": {
+          "title": "Privacidade como Direito",
+          "description": "Acreditamos que a privacidade digital não é um privilégio, mas um direito humano fundamental que deve ser protegido"
+        },
+        "p2": {
+          "title": "Liberdade Descentralizada",
+          "description": "O poder deve ser distribuído entre os usuários, não concentrado em corporações ou governos"
+        },
+        "p3": {
+          "title": "Segurança de Código Aberto",
+          "description": "As ferramentas de privacidade devem ser transparentes, permitindo aos usuários verificar se funcionam conforme prometido"
+        }
+      },
+      "join": {
+        "title": "Junte-se ao Movimento",
+        "description": "Comece a usar as ferramentas GhostX hoje e retome o controle de sua vida digital. Cada usuário fortalece a rede.",
+        "cta": "Começar"
+      }
+    }
+  }
+}

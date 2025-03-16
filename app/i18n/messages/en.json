@@ -1,0 +1,128 @@
+{
+  "header": {
+    "privacySwap": "Privacy Swap",
+    "aiChatbot": "AI Chatbot",
+    "about": "About"
+  },
+  "footer": {
+    "description": "GhostX provides privacy-focused tools inspired by John McAfee's vision for digital freedom",
+    "quickLinks": "Quick Links",
+    "about": "About",
+    "privacy": "Privacy",
+    "languages": "Languages",
+    "tribute": "In memory of John, with",
+    "by": "by",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "soon": "Coming Soon",
+    "selectLanguage": "Select language"
+  },
+  "mcafee": {
+    "title": "John McAfee Legacy",
+    "mcafee": {
+      "title": "John McAfee - Digital Freedom Pioneer"
+    },
+    "hero": {
+      "title": "Freedom Through Privacy",
+      "subtitle": "Continuing John McAfee's vision of digital sovereignty and personal freedom",
+      "cta": {
+        "privacySwap": "Privacy Swap",
+        "talkToJohn": "Talk to John"
+      },
+      "common": {
+        "soon": "Coming Soon"
+      }
+    },
+    "tools": {
+      "common": {
+        "soon": "Coming Soon"
+      },
+      "heading": "Privacy Tools",
+      "subheading": "Protect your digital sovereignty with these tools inspired by John's vision",
+      "privacySwap": {
+        "title": "Privacy Swap",
+        "description": "Exchange your crypto assets privately without government interference.",
+        "cta": "Try Privacy Swap"
+      },
+      "chatbot": {
+        "title": "John McAfee AI",
+        "description": "Converse with a digital version of John, built on his philosophy and thinking.",
+        "cta": "Talk to John"
+      }
+    },
+    "quotes": {
+      "heading": "In His Own Words",
+      "quote1": {
+        "text": "Privacy is a fundamental human right. Without it, there is no freedom. Governments want you to believe you need to give up privacy for security, but that's a fallacy.",
+        "year": "2016"
+      },
+      "quote2": {
+        "text": "Governments are the greatest threat to human freedom in history. They operate using fear to control. Trust no system that requires your submission.",
+        "year": "2019"
+      },
+      "quote3": {
+        "text": "Cryptocurrencies are the first line of defense against monetary tyranny. Decentralized digital money will eliminate central banks' control over our lives.",
+        "year": "2020"
+      },
+      "privacy": "Privacy is a fundamental human right. Without it, there is no freedom. Governments want you to believe you need to give up privacy for security, but that's a fallacy.",
+      "government": "Governments are the greatest threat to human freedom in history. They operate using fear to control. Trust no system that requires your submission.",
+      "crypto": "Cryptocurrencies are the first line of defense against monetary tyranny. Decentralized digital money will eliminate central banks' control over our lives.",
+      "freedom": "Freedom is non-negotiable. We live in a world where we are constantly monitored, but with the right tools, we can reclaim our digital autonomy."
+    },
+    "timeline": {
+      "title": "The McAfee Timeline",
+      "subtitle": "The remarkable journey of a technology pioneer and freedom advocate",
+      "events": {
+        "1945": {
+          "title": "Born on September 18",
+          "description": "John David McAfee was born in the United Kingdom on a US Army base."
+        },
+        "1987": {
+          "title": "Founded McAfee Associates",
+          "description": "Created the first commercial antivirus software and distributed it as shareware."
+        },
+        "2010": {
+          "title": "Moved to Belize",
+          "description": "Relocated to Belize to pursue interests in antibiotics derived from jungle plants."
+        },
+        "2016": {
+          "title": "Ran for US President",
+          "description": "Ran for the Libertarian Party nomination for President of the United States."
+        },
+        "2019": {
+          "title": "Living in Exile",
+          "description": "Announced he was living in exile due to tax issues with the US government."
+        },
+        "2021": {
+          "title": "Passed Away",
+          "description": "Found dead in a Spanish prison at the age of 75, hours after his extradition to the US was approved."
+        }
+      }
+    },
+    "legacy": {
+      "heading": "Continuing the Mission",
+      "subheading": "John McAfee stood for digital privacy, freedom from government surveillance, and individual sovereignty",
+      "principles": {
+        "title": "Core Principles",
+        "p1": {
+          "title": "Privacy as a Right",
+          "description": "We believe that digital privacy is not a privilege but a fundamental human right that must be protected"
+        },
+        "p2": {
+          "title": "Decentralized Freedom",
+          "description": "Power should be distributed among users, not concentrated in corporations or governments"
+        },
+        "p3": {
+          "title": "Open Source Security",
+          "description": "Privacy tools should be transparent, allowing users to verify they work as promised"
+        }
+      },
+      "join": {
+        "title": "Join the Movement",
+        "description": "Start using GhostX tools today and take back control of your digital life. Every user strengthens the network.",
+        "cta": "Get Started"
+      }
+    }
+  }
+}
