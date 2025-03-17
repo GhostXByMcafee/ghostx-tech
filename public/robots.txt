@@ -1,0 +1,37 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+Allow: /*.js$
+Allow: /*.css$
+
+User-agent: Bingbot
+Allow: /
+Allow: /*.js$
+Allow: /*.css$
+
+User-agent: DuckDuckBot
+Allow: /
+
+Allow: /es
+Allow: /en
+Allow: /pt
+Allow: /*/atomic-swap
+Allow: /*/chatbot
+Allow: /*/privacy-tools
+
+Disallow: /_next/static/testing
+Disallow: /api/internal/
+Disallow: /admin/
+Disallow: /login/
+Disallow: /*/draft/
+
+Disallow: /*?source=*
+Disallow: /*&ref=*
+
+Crawl-delay: 2
+
+Sitemap: https://ghostx.tech/sitemap.xml
+
+# "Internet privacy is a myth. Total anonymity is the only truth." - John McAfee

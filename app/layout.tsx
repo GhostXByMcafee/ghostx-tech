@@ -8,6 +8,7 @@ import Head from 'next/head';
 import messages from '@/app/i18n/messages';
 import { getMetadata } from '@/app/metadata';
 import '@/app/globals.css';
+import ConsoleMessage from './components/utils/ConsoleMessage';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -55,6 +56,7 @@ export default function RootLayout({
         <meta name="keywords" content={metadata.keywords} />
       </head>
       <body className={inter.className}>
+        <ConsoleMessage />
         <IntlProvider 
           locale={locale} 
           messages={flattenedMessages}
