@@ -65,18 +65,7 @@ The application will be available at http://localhost:3000.
 
 ### Project Structure
 
-/ghostx-tech
-  /components        # React components
-    /layout          # Header, Footer
-    /mcafee          # McAfee-specific components
-    /utils           # Utility components
-  /i18n              # Internationalization files
-    /messages        # Translation files
-  /[locale]          # Locale-specific routes
-  layout.tsx         # Root layout
-  page.tsx           # Home page
-/public              # Static assets
-
+Check structure.md file. for the complete directory structure.
 
 ### Building for Production
 
