@@ -79,29 +79,33 @@ export default function VideoCarouselBase({ t, customClass = '' }: VideoCarousel
   };
 
   return (
-    <section id="videos" className={`py-20 bg-zinc-800 ${customClass}`}>
+    <section id="videos" className={`py-12 sm:py-20 bg-zinc-800 ${customClass}`}>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-white">{t('heading')}</h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4 text-white">{t('heading')}</h2>
+          <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto px-2">
             {t('subheading')}
           </p>
         </motion.div>
 
-        <div className="relative">
+        <div className="relative ghost-swiper">
           <Swiper
             modules={[Navigation, Pagination]}
-            spaceBetween={30}
+            spaceBetween={20}
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
             breakpoints={{
+              480: {
+                slidesPerView: 1.2,
+                spaceBetween: 15,
+              },
               640: {
                 slidesPerView: 2,
                 spaceBetween: 20,
@@ -120,23 +124,23 @@ export default function VideoCarouselBase({ t, customClass = '' }: VideoCarousel
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-zinc-900 rounded-xl overflow-hidden shadow-lg h-[300px] cursor-pointer transform transition-transform hover:scale-105"
+                  className="bg-zinc-900 rounded-xl overflow-hidden shadow-lg h-[280px] sm:h-[300px] cursor-pointer transform transition-transform hover:scale-105"
                   onClick={() => {
                     setActiveVideoIndex(index);
                     setIsPlaying(true);
                   }}
                 >
-                  <div className="relative h-[160px] w-full">
+                  <div className="relative h-[140px] sm:h-[160px] w-full">
                     <img
                       src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
                       alt={t(video.title)}
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-red-600 rounded-full w-12 h-12 flex items-center justify-center">
+                      <div className="bg-red-600 rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-6 w-6 text-white"
+                          className="h-5 w-5 sm:h-6 sm:w-6 text-white"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -157,9 +161,9 @@ export default function VideoCarouselBase({ t, customClass = '' }: VideoCarousel
                       </div>
                     </div>
                   </div>
-                  <div className="p-5">
-                    <h3 className="text-xl font-bold mb-2 text-white">{t(video.title)}</h3>
-                    <p className="text-gray-400 line-clamp-3">{t(video.description)}</p>
+                  <div className="p-4 sm:p-5">
+                    <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2 text-white">{t(video.title)}</h3>
+                    <p className="text-sm sm:text-base text-gray-400 line-clamp-3">{t(video.description)}</p>
                   </div>
                 </motion.div>
               </SwiperSlide>
@@ -192,9 +196,9 @@ export default function VideoCarouselBase({ t, customClass = '' }: VideoCarousel
                   className="w-full h-full"
                 />
               </div>
-              <div className="p-6">
-                <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-2xl font-bold text-white">
+              <div className="p-4 sm:p-6">
+                <div className="flex justify-between items-center mb-3 sm:mb-4">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white">
                     {t(videos[activeVideoIndex].title)}
                   </h3>
                   <button
@@ -218,7 +222,7 @@ export default function VideoCarouselBase({ t, customClass = '' }: VideoCarousel
                     </svg>
                   </button>
                 </div>
-                <p className="text-gray-400">{t(videos[activeVideoIndex].description)}</p>
+                <p className="text-sm sm:text-base text-gray-400">{t(videos[activeVideoIndex].description)}</p>
               </div>
             </motion.div>
           </motion.div>

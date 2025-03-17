@@ -51,15 +51,16 @@ export default function HeaderBase({ t, customClass = '' }: HeaderProps) {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-zinc-900/95 shadow-md' : 'bg-transparent'} ${customClass}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <Link href={locale === 'en' ? '/' : `/${locale}`} className="relative z-50">
-            <div className="relative h-10 w-32 md:h-12 md:w-40">
+          <Link href="/" className="relative z-50 pl-2">
+            <div className="flex items-center">
               <Image 
                 src="/ghostXLogo.png" 
-                alt="GhostX"
-                fill
-                className="object-contain"
-                priority
+                alt="ghostX Logo" 
+                width={48} 
+                height={48} 
+                className="mr-2"
               />
+              <span className="text-xl sm:text-2xl font-bold text-white">ghostX</span>
             </div>
           </Link>
 
@@ -98,59 +99,67 @@ export default function HeaderBase({ t, customClass = '' }: HeaderProps) {
             <LanguageSelector mode="header" />
           </nav>
 
-          <button
-            className="md:hidden text-white z-50"
+          <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle mobile menu"
+            className="md:hidden relative z-50 flex items-center mr-3"
+            aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? (
-              <span className="text-2xl">✕</span>
-            ) : (
-              <span className="text-2xl">☰</span>
-            )}
+            <svg 
+              className="w-6 h-6 text-white" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              {mobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
           </button>
         </div>
       </div>
 
-      <div className={`fixed inset-0 bg-zinc-900/98 z-40 flex flex-col items-center justify-center transition-all duration-300 ${mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-        <nav className="flex flex-col items-center space-y-6 text-xl">
-          {navLinks.map((link, index) => (
-            link.isProductLink ? (
-              <span 
-                key={index}
-                className="text-white hover:text-gray-300 transition-colors font-medium cursor-not-allowed opacity-70 relative"
-              >
-                {link.label}
-                <span className="ml-2 text-sm bg-zinc-800 px-2 py-1 rounded-full text-gray-300">
-                  {t('common.soon')}
-                </span>
-              </span>
-            ) : link.isAnchor ? (
-              <a 
-                key={index}
-                href={link.href}
-                className="text-white hover:text-gray-300 transition-colors font-medium"
-                onClick={(e) => handleSmoothScroll(e, link.href)}
-              >
-                {link.label}
-              </a>
-            ) : (
-              <Link 
-                key={index}
-                href={link.href}
-                className="text-white hover:text-gray-300 transition-colors font-medium"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            )
-          ))}
-          
-          <div className="mt-6">
-            <LanguageSelector />
+      {mobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 right-0 bg-zinc-900/95 border-t border-zinc-800 shadow-lg">
+          <div className="py-3 px-4 space-y-3">
+            {navLinks.map((link, index) => (
+              <div key={index} className="py-2">
+                {link.isProductLink ? (
+                  <span className="text-white block font-medium cursor-not-allowed opacity-70">
+                    {link.label}
+                    <span className="ml-2 text-xs bg-zinc-800 px-1.5 py-0.5 rounded text-gray-300">
+                      {t('common.soon')}
+                    </span>
+                  </span>
+                ) : link.isAnchor ? (
+                  <a 
+                    href={link.href}
+                    className="text-white block font-medium"
+                    onClick={(e) => {
+                      handleSmoothScroll(e, link.href);
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link 
+                    href={link.href}
+                    className="text-white block font-medium"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                )}
+              </div>
+            ))}
+            <div className="pt-2">
+              <LanguageSelector customClass="flex-row items-center" />
+            </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      )}
     </header>
   );
 } 

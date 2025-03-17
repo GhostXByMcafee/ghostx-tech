@@ -5,7 +5,7 @@
     "about": "About"
   },
   "footer": {
-    "description": "GhostX provides privacy-focused tools inspired by John McAfee's vision for digital freedom",
+    "description": "ghostX provides privacy-focused tools inspired by John McAfee's vision for digital freedom",
     "quickLinks": "Quick Links",
     "about": "About",
     "privacy": "Privacy",
@@ -120,7 +120,7 @@
       },
       "join": {
         "title": "Join the Movement",
-        "description": "Start using GhostX tools today and take back control of your digital life. Every user strengthens the network.",
+        "description": "Start using ghostX tools today and take back control of your digital life. Every user strengthens the network.",
         "cta": "Get Started"
       }
     },
