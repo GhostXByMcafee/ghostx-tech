@@ -52,7 +52,7 @@ export default function HeroBase({ t, customClass = '' }: HeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-4 sm:mb-6">
             <span className="text-white">
               {t('title')}
             </span>
@@ -64,7 +64,7 @@ export default function HeroBase({ t, customClass = '' }: HeroProps) {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <p className="text-xl md:text-2xl text-gray-200 mb-12">
+          <p className="text-base sm:text-xl md:text-2xl text-gray-200 mb-8 sm:mb-12 px-4 max-w-3xl mx-auto">
             {t('subtitle')}
           </p>
         </motion.div>
@@ -75,14 +75,16 @@ export default function HeroBase({ t, customClass = '' }: HeroProps) {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col md:flex-row gap-4 justify-center"
         >
-          <div className="relative group">
+          <div className="relative group w-full sm:w-auto max-w-xs mx-auto">
             <motion.button
               disabled
-              className="bg-transparent border border-white text-white px-8 py-3 rounded-full font-medium 
-                        opacity-70 cursor-not-allowed flex items-center justify-center"
+              className="bg-transparent border border-white text-white px-6 sm:px-8 py-3 rounded-full font-medium 
+                        opacity-70 cursor-not-allowed flex items-center justify-center mx-auto w-full sm:w-auto"
             >
               {t('cta.talkToJohn')} 
-              <span className="ml-2 text-sm bg-zinc-800 px-2 py-1 rounded-full">{t('common.soon')}</span>
+              <span className="ml-2 text-xs bg-zinc-800 px-2 py-1 rounded-full whitespace-nowrap">
+                {t('common.soon')}
+              </span>
             </motion.button>
           </div>
         </motion.div>

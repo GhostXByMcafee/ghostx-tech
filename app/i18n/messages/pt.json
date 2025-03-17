@@ -1,11 +1,11 @@
 {
   "header": {
-    "privacySwap": "Privacy Swap",
+    "privacySwap": "Privacy Atomic Swap",
     "aiChatbot": "Chatbot de IA",
     "about": "Sobre"
   },
   "footer": {
-    "description": "A GhostX fornece ferramentas focadas em privacidade inspiradas na visão de John McAfee para a liberdade digital",
+    "description": "A ghostX fornece ferramentas focadas em privacidade inspiradas na visão de John McAfee para a liberdade digital",
     "quickLinks": "Links Rápidos",
     "about": "Sobre",
     "privacy": "Privacidade",
@@ -27,7 +27,7 @@
       "title": "Liberdade Através da Privacidade",
       "subtitle": "Continuando a visão de John McAfee de soberania digital e liberdade pessoal",
       "cta": {
-        "privacySwap": "Privacy Swap",
+        "privacySwap": "Privacy Atomic Swap",
         "talkToJohn": "Falar com John"
       },
       "common": {
@@ -41,9 +41,9 @@
       "heading": "Ferramentas de Privacidade",
       "subheading": "Proteja sua soberania digital com estas ferramentas inspiradas na visão de John",
       "privacySwap": {
-        "title": "Privacy Swap",
+        "title": "Privacy Atomic Swap",
         "description": "Troque seus ativos cripto de forma privada sem interferência governamental.",
-        "cta": "Experimentar Privacy Swap"
+        "cta": "Experimentar Privacy Atomic Swap"
       },
       "chatbot": {
         "title": "IA de John McAfee",
@@ -118,8 +118,24 @@
       },
       "join": {
         "title": "Junte-se ao Movimento",
-        "description": "Comece a usar as ferramentas GhostX hoje e retome o controle de sua vida digital. Cada usuário fortalece a rede.",
+        "description": "Comece a usar as ferramentas ghostX hoje e retome o controle de sua vida digital. Cada usuário fortalece a rede.",
         "cta": "Começar"
+      }
+    },
+    "videos": {
+      "heading": "McAfee sobre Privacidade",
+      "subheading": "Assista às perspectivas de John McAfee sobre privacidade, liberdade e soberania digital",
+      "video1": {
+        "title": "Porn é o maior hacker",
+        "description": "John McAfee explica por que o porno é o maior hacker e por que tudo está 'jailbroken'"
+      },
+      "video2": {
+        "title": "Por quê as moedas privadas são o futuro",
+        "description": "John McAfee explica por que as moedas privadas são o futuro e como elas mudarão o mundo."
+      },
+      "video3": {
+        "title": "Crackeando qualquer telefone",
+        "description": "John McAfee mostra como é possível crackear qualquer telefone ou computador com instruções de processador executadas remotamente"
       }
     }
   }
