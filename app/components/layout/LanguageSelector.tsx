@@ -92,6 +92,7 @@ export default function LanguageSelector({ customClass = '', mode = 'header' }: 
             src={currentLanguage.flag}
             alt={currentLanguage.name}
             fill
+            sizes="(max-width: 768px) 28px, 28px"
             className="object-cover rounded-sm"
           />
         </div>
@@ -118,6 +119,7 @@ export default function LanguageSelector({ customClass = '', mode = 'header' }: 
                     src={language.flag}
                     alt={language.name}
                     fill
+                    sizes="(max-width: 768px) 24px, 24px"
                     className="object-cover rounded-sm"
                   />
                 </div>

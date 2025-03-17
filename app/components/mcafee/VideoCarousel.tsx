@@ -124,23 +124,33 @@ export default function VideoCarouselBase({ t, customClass = '' }: VideoCarousel
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-zinc-900 rounded-xl overflow-hidden shadow-lg h-[280px] sm:h-[300px] cursor-pointer transform transition-transform hover:scale-105"
+                  className="bg-zinc-900 rounded-xl overflow-hidden shadow-lg h-auto min-h-[280px] sm:min-h-[320px] cursor-pointer transform transition-transform hover:scale-105"
                   onClick={() => {
                     setActiveVideoIndex(index);
                     setIsPlaying(true);
                   }}
                 >
-                  <div className="relative h-[140px] sm:h-[160px] w-full">
+                  <div className="relative h-[160px] sm:h-[180px] w-full">
                     <img
-                      src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
+                      src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
                       alt={t(video.title)}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        if (target.src.includes('maxresdefault')) {
+                          target.src = `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`;
+                        } else if (target.src.includes('hqdefault')) {
+                          target.src = `https://img.youtube.com/vi/${video.id}/mqdefault.jpg`;
+                        } else if (target.src.includes('mqdefault')) {
+                          target.src = `https://img.youtube.com/vi/${video.id}/default.jpg`;
+                        }
+                      }}
                     />
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-red-600 rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                      <div className="bg-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-5 w-5 sm:h-6 sm:w-6 text-white"
+                          className="h-5 w-5 sm:h-6 sm:w-6 text-black"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -162,7 +172,7 @@ export default function VideoCarouselBase({ t, customClass = '' }: VideoCarousel
                     </div>
                   </div>
                   <div className="p-4 sm:p-5">
-                    <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2 text-white">{t(video.title)}</h3>
+                    <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white line-clamp-2">{t(video.title)}</h3>
                     <p className="text-sm sm:text-base text-gray-400 line-clamp-3">{t(video.description)}</p>
                   </div>
                 </motion.div>
