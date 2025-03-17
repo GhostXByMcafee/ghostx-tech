@@ -1,6 +1,6 @@
 {
   "header": {
-    "privacySwap": "Privacy Swap",
+    "privacySwap": "Privacy Atomic Swap",
     "aiChatbot": "AI Chatbot",
     "about": "About"
   },
@@ -27,7 +27,7 @@
       "title": "Freedom Through Privacy",
       "subtitle": "Continuing John McAfee's vision of digital sovereignty and personal freedom",
       "cta": {
-        "privacySwap": "Privacy Swap",
+        "privacySwap": "Privacy Atomic Swap",
         "talkToJohn": "Talk to John"
       },
       "common": {
@@ -41,9 +41,9 @@
       "heading": "Privacy Tools",
       "subheading": "Protect your digital sovereignty with these tools inspired by John's vision",
       "privacySwap": {
-        "title": "Privacy Swap",
+        "title": "Privacy Atomic Swap",
         "description": "Exchange your crypto assets privately without government interference.",
-        "cta": "Try Privacy Swap"
+        "cta": "Try Privacy Atomic Swap"
       },
       "chatbot": {
         "title": "John McAfee AI",
@@ -122,6 +122,22 @@
         "title": "Join the Movement",
         "description": "Start using GhostX tools today and take back control of your digital life. Every user strengthens the network.",
         "cta": "Get Started"
+      }
+    },
+    "videos": {
+      "heading": "McAfee on Privacy",
+      "subheading": "Watch John McAfee's perspectives on privacy, freedom, and digital sovereignty",
+      "video1": {
+        "title": "Porn is the Biggest Hacker",
+        "description": "John McAfee explains why porn is the biggest hacker and why everything is 'jailbroken'"
+      },
+      "video2": {
+        "title": "Why Private Coins are the Future",
+        "description": "John McAfee explains why private coins are the future and how they will change the world."
+      },
+      "video3": {
+        "title": "Cracking Any Phone",
+        "description": "John McAfee shows how it's possible to crack any phone or computer with remotely executed processor instructions"
       }
     }
   }

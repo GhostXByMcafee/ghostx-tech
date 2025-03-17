@@ -1,7 +1,7 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import { Header, Footer, Hero, PrivacyTools, QuotesSection, TimelineSection, LegacySection } from '../components/LocalizedComponents';
+import { Header, Footer, Hero, PrivacyTools, QuotesSection, TimelineSection, LegacySection, VideoCarousel } from '../components/LocalizedComponents';
 
 export default function LocalePage() {
   const params = useParams();
@@ -13,6 +13,7 @@ export default function LocalePage() {
       <main>
         <Hero />
         <PrivacyTools />
+        <VideoCarousel />
         <QuotesSection />
         <TimelineSection />
         <LegacySection />

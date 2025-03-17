@@ -7,6 +7,7 @@ import PrivacyToolsBase from './mcafee/PrivacyTools';
 import QuotesSectionBase from './mcafee/QuotesSection';
 import TimelineSectionBase from './mcafee/TimelineSection';
 import LegacySectionBase from './mcafee/LegacySection';
+import VideoCarouselBase from './mcafee/VideoCarousel';
 import { withLocalization } from '@/app/i18n/withLocalization';
 
 export const Header = withLocalization(HeaderBase, '');
@@ -16,4 +17,5 @@ export const Hero = withLocalization(HeroBase, 'mcafee.hero');
 export const PrivacyTools = withLocalization(PrivacyToolsBase, 'mcafee.tools');
 export const QuotesSection = withLocalization(QuotesSectionBase, 'mcafee.quotes');
 export const TimelineSection = withLocalization(TimelineSectionBase, 'mcafee.timeline');
-export const LegacySection = withLocalization(LegacySectionBase, 'mcafee.legacy'); 
+export const LegacySection = withLocalization(LegacySectionBase, 'mcafee.legacy');
+export const VideoCarousel = withLocalization(VideoCarouselBase, 'mcafee.videos'); 

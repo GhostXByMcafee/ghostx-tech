@@ -1,6 +1,6 @@
 {
   "header": {
-    "privacySwap": "Privacy Swap",
+    "privacySwap": "Privacy Atomic Swap",
     "aiChatbot": "Chat con IA",
     "about": "Acerca de"
   },
@@ -27,7 +27,7 @@
       "title": "Libertad A Través de la Privacidad",
       "subtitle": "Continuando la visión de John McAfee de soberanía digital y libertad personal",
       "cta": {
-        "privacySwap": "Privacy Swap",
+        "privacySwap": "Privacy Atomic Swap",
         "talkToJohn": "Hablar con John"
       },
       "common": {
@@ -41,9 +41,9 @@
       "heading": "Herramientas de Privacidad",
       "subheading": "Protege tu soberanía digital con estas herramientas inspiradas en la visión de John",
       "privacySwap": {
-        "title": "Privacy Swap",
+        "title": "Privacy Atomic Swap",
         "description": "Intercambia tus activos cripto de forma privada sin interferencia gubernamental.",
-        "cta": "Probar Privacy Swap"
+        "cta": "Probar Privacy Atomic Swap"
       },
       "chatbot": {
         "title": "IA de John McAfee",
@@ -146,6 +146,22 @@
         "title": "Únete al Movimiento",
         "description": "Comienza a usar las herramientas de GhostX hoy y recupera el control de tu vida digital. Cada usuario fortalece la red.",
         "cta": "Comenzar"
+      }
+    },
+    "videos": {
+      "heading": "McAfee sobre la Privacidad",
+      "subheading": "Mira las perspectivas de John McAfee sobre privacidad, libertad y soberanía digital",
+      "video1": {
+        "title": "La pornografía es el mayor hacker",
+        "description": "John McAfee explica por qué la pornografía es el mayor hacker y por qué todo está 'jailbroken'"
+      },
+      "video2": {
+        "title": "Por qué las monedas privadas son el futuro",
+        "description": "John McAfee explica por qué las monedas privadas son el futuro y cómo cambiarán el mundo."
+      },
+      "video3": {
+        "title": "Crackeando cualquier teléfono",
+        "description": "John McAfee muestra cómo es posible crackear cualquier teléfono o computadora con instrucciones de procesador ejecutadas remotamente"
       }
     }
   }

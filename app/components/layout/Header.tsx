@@ -54,7 +54,7 @@ export default function HeaderBase({ t, customClass = '' }: HeaderProps) {
           <Link href={locale === 'en' ? '/' : `/${locale}`} className="relative z-50">
             <div className="relative h-10 w-32 md:h-12 md:w-40">
               <Image 
-                src="/logo.png" 
+                src="/ghostXLogo.png" 
                 alt="GhostX"
                 fill
                 className="object-contain"

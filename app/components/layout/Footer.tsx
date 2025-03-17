@@ -67,7 +67,7 @@ export default function FooterBase({ t, customClass = '' }: FooterProps) {
             <Link href={locale === 'en' ? '/' : `/${locale}`}>
               <div className="relative h-14 w-56 md:h-16 md:w-64 mb-6">
                 <Image 
-                  src="/logo.png" 
+                  src="/ghostXLogo.png" 
                   alt="GhostX"
                   fill
                   className="object-contain"
