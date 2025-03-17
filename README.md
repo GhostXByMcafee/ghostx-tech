@@ -1,5 +1,7 @@
 #ghostX
 
+![ghostX Logo](public/ghostXLogo.png)
+
 ## Privacy Tools Inspired by John McAfee's Vision
 
 ghostX provides privacy-focused tools inspired by John McAfee's vision for digital freedom. This project continues his legacy of fighting for digital privacy, freedom from government surveillance, and individual sovereignty.
