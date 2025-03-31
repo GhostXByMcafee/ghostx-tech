@@ -1,5 +1,3 @@
-#ghostX
-
 ![ghostX Logo](public/ghostXLogo.png)
 
 ## Privacy Tools Inspired by John McAfee's Vision
@@ -43,6 +41,8 @@ ghostX provides privacy-focused tools inspired by John McAfee's vision for digit
 - Clone the repository
 
 ```git clone https://github.com/GhostXByMcafee/ghostx-tech.git```
+
+- Change directory
 ```cd ghostx-tech```
 
 - Install dependencies
@@ -72,6 +72,8 @@ Check structure.md file. for the complete directory structure.
 ### Building for Production
 
 ```npm run build```
+
+- Run production server
 ```npm run start```
 
 ### Core Principles

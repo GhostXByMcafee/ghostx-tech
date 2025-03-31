@@ -18,9 +18,26 @@ export default function HeaderBase({ t, customClass = '' }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: `#`, label: t('header.privacySwap'), isProductLink: true },
-    { href: `#`, label: t('header.aiChatbot'), isProductLink: true },
-    { href: '#privacy-tools', label: t('header.about'), isProductLink: false, isAnchor: true }
+    { 
+      href: '#', 
+      label: t('header.privacySwap'), 
+      isProductLink: true,
+      disabled: true 
+    },
+    { 
+      href: 'https://t.me/ghostxtech', 
+      label: t('header.aiChatbot'), 
+      isProductLink: true,
+      disabled: false,
+      isExternal: true 
+    },
+    { 
+      href: '#privacy-tools', 
+      label: t('header.about'), 
+      isProductLink: false, 
+      disabled: false,
+      isAnchor: true 
+    }
   ];
 
   useEffect(() => {
@@ -66,36 +83,35 @@ export default function HeaderBase({ t, customClass = '' }: HeaderProps) {
 
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link, index) => (
-              link.isProductLink ? (
-                <span 
-                  key={index}
-                  className="text-white hover:text-gray-300 transition-colors font-medium cursor-not-allowed opacity-70 relative group"
-                >
-                  {link.label}
-                  <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs bg-zinc-800 px-2 py-1 rounded text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity">
-                    {t('common.soon')}
+              <div key={index} className="relative">
+                {link.disabled ? (
+                  <span className="text-gray-400 cursor-not-allowed flex items-center">
+                    {link.label}
+                    {link.isProductLink && (
+                      <span className="ml-2 text-xs bg-zinc-800 px-2 py-1 rounded-full">
+                        {t('common.soon')}
+                      </span>
+                    )}
                   </span>
-                </span>
-              ) : link.isAnchor ? (
-                <a 
-                  key={index}
-                  href={link.href}
-                  className="text-white hover:text-gray-300 transition-colors font-medium"
-                  onClick={(e) => handleSmoothScroll(e, link.href)}
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link 
-                  key={index}
-                  href={link.href}
-                  className="text-white hover:text-gray-300 transition-colors font-medium"
-                >
-                  {link.label}
-                </Link>
-              )
+                ) : link.isExternal ? (
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link 
+                    href={link.href}
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                )}
+              </div>
             ))}
-
             <LanguageSelector mode="header" />
           </nav>
 

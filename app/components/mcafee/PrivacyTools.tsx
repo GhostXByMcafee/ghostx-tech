@@ -24,7 +24,7 @@ export default function PrivacyToolsBase({ t, customClass = '' }: PrivacyToolsPr
       description: 'chatbot.description',
       cta: 'chatbot.cta',
       icon: faRobot,
-      href: `#`
+      href: `https://t.me/ghostxtech`
     }
   ];
 
@@ -65,12 +65,23 @@ export default function PrivacyToolsBase({ t, customClass = '' }: PrivacyToolsPr
               <h3 className="text-2xl font-bold mb-3 text-white">{t(tool.title)}</h3>
               <p className="text-gray-400 flex-grow mb-6">{t(tool.description)}</p>
               
-              <button 
-                disabled
-                className="bg-zinc-800 cursor-not-allowed opacity-70 text-white font-medium py-2 px-4 rounded-full w-full border border-white"
-              >
-                {t('common.soon')}
-              </button>
+              {tool.title === 'chatbot.title' ? (
+                <a 
+                  href={tool.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-zinc-800 text-white font-medium py-2 px-4 rounded-full w-full border border-white hover:bg-white hover:text-black transition-all duration-300 text-center"
+                >
+                  {t(tool.cta)}
+                </a>
+              ) : (
+                <button 
+                  disabled
+                  className="bg-zinc-800 cursor-not-allowed opacity-70 text-white font-medium py-2 px-4 rounded-full w-full border border-white"
+                >
+                  {t('common.soon')}
+                </button>
+              )}
             </motion.div>
           ))}
         </div>
