@@ -4,7 +4,6 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { WithTranslation } from '@/app/i18n/withLocalization';
-import { FaTelegram } from 'react-icons/fa';
 
 interface FooterProps extends WithTranslation {
   customClass?: string;
