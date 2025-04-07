@@ -31,7 +31,7 @@ export default function LegacySection() {
   ];
 
   return (
-    <section className="py-24 bg-black">
+    <section id="legacy" className="py-20 bg-zinc-900">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,7 +48,7 @@ export default function LegacySection() {
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -91,12 +91,14 @@ export default function LegacySection() {
                 {intl.formatMessage({ id: 'mcafee.legacy.join.description' })}
               </p>
               <div>
-                <button
-                  disabled
-                  className="bg-white hover:bg-gray-200 cursor-not-allowed opacity-80 text-black font-bold py-3 px-6 rounded-md transition duration-300"
+                <a
+                  href="https://t.me/ghostxtech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white hover:bg-gray-200 text-black font-bold py-3 px-6 rounded-md transition duration-300 inline-block text-center"
                 >
-                  {intl.formatMessage({ id: 'common.soon' })}
-                </button>
+                  {intl.formatMessage({ id: 'mcafee.legacy.join.cta' })}
+                </a>
               </div>
             </div>
           </motion.div>

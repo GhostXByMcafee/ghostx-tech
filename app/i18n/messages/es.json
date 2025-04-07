@@ -1,6 +1,6 @@
 {
   "header": {
-    "privacySwap": "Privacy Atomic Swap",
+    "privacySwap": "Intercambio Atómico de Privacidad",
     "aiChatbot": "Chat con IA",
     "about": "Acerca de"
   },
@@ -12,7 +12,8 @@
     "languages": "Idiomas",
     "tribute": "En memoria de John, con",
     "by": "por",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "followUs": "Síguenos"
   },
   "common": {
     "soon": "Próximamente",

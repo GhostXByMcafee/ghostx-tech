@@ -75,18 +75,17 @@ export default function HeroBase({ t, customClass = '' }: HeroProps) {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col md:flex-row gap-4 justify-center"
         >
-          <div className="relative group w-full sm:w-auto max-w-xs mx-auto">
-            <motion.button
-              disabled
-              className="bg-transparent border border-white text-white px-6 sm:px-8 py-3 rounded-full font-medium 
-                        opacity-70 cursor-not-allowed flex items-center justify-center mx-auto w-full sm:w-auto"
-            >
-              {t('cta.talkToJohn')} 
-              <span className="ml-2 text-xs bg-zinc-800 px-2 py-1 rounded-full whitespace-nowrap">
-                {t('common.soon')}
-              </span>
-            </motion.button>
-          </div>
+      <div className="relative group w-full sm:w-auto max-w-xs mx-auto">
+        <motion.a
+          href="https://t.me/ghostxtech"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-transparent border border-white text-white px-6 sm:px-8 py-3 rounded-full font-medium 
+                    hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center mx-auto w-full sm:w-auto"
+        >
+          {t('cta.talkToJohn')}
+        </motion.a>
+      </div>
         </motion.div>
       </div>
     </section>

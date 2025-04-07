@@ -23,7 +23,17 @@
   }
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
@@ -77,20 +87,20 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f0f0f;
+  background: #1a1a1a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #404040;
-  border-radius: 3px;
+  background: #333;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #606060;
+  background: #444;
 }
 
 .mcafee-terminal-bg {

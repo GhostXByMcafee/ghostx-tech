@@ -23,11 +23,12 @@ export default function FooterBase({ t, customClass = '' }: FooterProps) {
       isAnchor: false 
     },
     { 
-      href: '#', 
+      href: 'https://t.me/ghostxtech', 
       label: t('header.aiChatbot'), 
       isProductLink: true,
-      disabled: true,
-      isAnchor: false 
+      disabled: false,
+      isAnchor: false,
+      isExternal: true
     },
     { 
       href: '#privacy-tools', 
@@ -79,6 +80,7 @@ export default function FooterBase({ t, customClass = '' }: FooterProps) {
               {t('footer.description')}
             </p>
             <div className="mb-6">
+              <p className="text-gray-300 mb-3">{t('footer.followUs')}</p>
               <div className="flex space-x-4">
                 <a 
                   href="https://github.com/GhostXByMcafee" 
