@@ -10,9 +10,9 @@ ghostX provides privacy-focused tools inspired by John McAfee's vision for digit
 
 ### Features
 
-- **Privacy Atomic Swap**: Exchange crypto assets privately without government interference
+- **Privacy Atomic Swap**: Exchange crypto assets privately without government interference (in works)
 
-- **John McAfee AI Chatbot**: Converse with a digital version of John built on his philosophy
+- **John McAfee AI Chatbot**: Converse with a digital version of John built on his philosophy. Engage with him at [ghostX Telegram channel](https://t.me/ghostxtech) or just install it in your group (@McAfees_soul_bot)
 
 - **Privacy-First Approach**: All tools designed with a no-compromise stance on user privacy
 

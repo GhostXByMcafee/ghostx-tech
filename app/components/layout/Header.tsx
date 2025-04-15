@@ -32,6 +32,13 @@ export default function HeaderBase({ t, customClass = '' }: HeaderProps) {
       isExternal: true 
     },
     { 
+      href: 'https://privacymatters.ghost.io/', 
+      label: t('header.privacyBlog'), 
+      isProductLink: false,
+      disabled: false,
+      isExternal: true 
+    },
+    { 
       href: '#privacy-tools', 
       label: t('header.about'), 
       isProductLink: false, 

@@ -31,6 +31,14 @@ export default function FooterBase({ t, customClass = '' }: FooterProps) {
       isExternal: true
     },
     { 
+      href: 'https://privacymatters.ghost.io/', 
+      label: t('footer.privacyBlog'), 
+      isProductLink: false,
+      disabled: false,
+      isAnchor: false,
+      isExternal: true
+    },
+    { 
       href: '#privacy-tools', 
       label: t('footer.about'), 
       isProductLink: false, 
@@ -119,6 +127,15 @@ export default function FooterBase({ t, customClass = '' }: FooterProps) {
                     <a 
                       href={link.href} 
                       onClick={(e) => handleSmoothScroll(e, link.href)}
+                      className={`hover:text-white transition-colors ${link.isProductLink ? 'text-gray-400' : 'text-gray-400'}`}
+                    >
+                      {link.label}
+                    </a>
+                  ) : link.isExternal ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`hover:text-white transition-colors ${link.isProductLink ? 'text-gray-400' : 'text-gray-400'}`}
                     >
                       {link.label}
