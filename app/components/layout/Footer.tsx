@@ -31,18 +31,19 @@ export default function FooterBase({ t, customClass = '' }: FooterProps) {
       isExternal: true
     },
     { 
+      href: 'https://privacymatters.ghost.io/', 
+      label: t('footer.privacyBlog'), 
+      isProductLink: false,
+      disabled: false,
+      isAnchor: false,
+      isExternal: true
+    },
+    { 
       href: '#privacy-tools', 
       label: t('footer.about'), 
       isProductLink: false, 
       disabled: false,
       isAnchor: true 
-    },
-    { 
-      href: '#', 
-      label: t('footer.privacy'), 
-      isProductLink: false,
-      disabled: true,
-      isAnchor: false 
     }
   ];
 
@@ -66,12 +67,12 @@ export default function FooterBase({ t, customClass = '' }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <Link href={locale === 'en' ? '/' : `/${locale}`}>
-              <div className="relative h-14 w-56 md:h-16 md:w-64 mb-6">
+              <div className="relative h-20 w-72 md:h-24 md:w-96 mb-6">
                 <Image 
                   src="/ghostXLogo.png" 
                   alt="ghostX"
                   fill
-                  sizes="(max-width: 768px) 224px, 256px"
+                  sizes="(max-width: 768px) 288px, 384px"
                   className="object-contain"
                 />
               </div>
@@ -126,6 +127,15 @@ export default function FooterBase({ t, customClass = '' }: FooterProps) {
                     <a 
                       href={link.href} 
                       onClick={(e) => handleSmoothScroll(e, link.href)}
+                      className={`hover:text-white transition-colors ${link.isProductLink ? 'text-gray-400' : 'text-gray-400'}`}
+                    >
+                      {link.label}
+                    </a>
+                  ) : link.isExternal ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`hover:text-white transition-colors ${link.isProductLink ? 'text-gray-400' : 'text-gray-400'}`}
                     >
                       {link.label}

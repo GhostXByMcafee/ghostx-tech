@@ -32,6 +32,13 @@ export default function HeaderBase({ t, customClass = '' }: HeaderProps) {
       isExternal: true 
     },
     { 
+      href: 'https://privacymatters.ghost.io/', 
+      label: t('header.privacyBlog'), 
+      isProductLink: false,
+      disabled: false,
+      isExternal: true 
+    },
+    { 
       href: '#privacy-tools', 
       label: t('header.about'), 
       isProductLink: false, 
@@ -73,11 +80,11 @@ export default function HeaderBase({ t, customClass = '' }: HeaderProps) {
               <Image 
                 src="/ghostXLogo.png" 
                 alt="ghostX Logo" 
-                width={48} 
-                height={48} 
-                className="mr-2"
+                width={72} 
+                height={72} 
+                className="mr-3"
               />
-              <span className="text-xl sm:text-2xl font-bold text-white">ghostX</span>
+              <span className="text-3xl sm:text-4xl font-bold text-white">ghostX</span>
             </div>
           </Link>
 
@@ -141,13 +148,23 @@ export default function HeaderBase({ t, customClass = '' }: HeaderProps) {
           <div className="py-3 px-4 space-y-3">
             {navLinks.map((link, index) => (
               <div key={index} className="py-2">
-                {link.isProductLink ? (
+                {link.disabled ? (
                   <span className="text-white block font-medium cursor-not-allowed opacity-70">
                     {link.label}
                     <span className="ml-2 text-xs bg-zinc-800 px-1.5 py-0.5 rounded text-gray-300">
                       {t('common.soon')}
                     </span>
                   </span>
+                ) : link.isExternal ? (
+                  <a 
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white block font-medium"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
                 ) : link.isAnchor ? (
                   <a 
                     href={link.href}

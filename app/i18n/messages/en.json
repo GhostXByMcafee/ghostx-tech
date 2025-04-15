@@ -2,7 +2,8 @@
   "header": {
     "privacySwap": "Privacy Atomic Swap",
     "aiChatbot": "AI Chatbot",
-    "about": "About"
+    "about": "About",
+    "privacyBlog": "Privacy Blog"
   },
   "footer": {
     "description": "ghostX provides privacy-focused tools inspired by John McAfee's vision for digital freedom",
@@ -13,7 +14,8 @@
     "tribute": "In memory of John, with",
     "by": "by",
     "rights": "All rights reserved.",
-    "followUs": "Follow Us"
+    "followUs": "Follow Us",
+    "privacyBlog": "Privacy Blog"
   },
   "common": {
     "soon": "Coming Soon",
